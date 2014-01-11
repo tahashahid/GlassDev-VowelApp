@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-touch.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
+    <script src="data/vowels.json"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body ng-app="itemsModules">
+<!--<span class="glyphicon glyphicon-search"></span>-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>
+            <span><a class="btn btn-primary btn-sm" href="index.html" role="button">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                Back
+            </a></span>
+                <span style="margin-left: 2em">Classes | Vowels</span>
+            </h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <ul class="nav nav-tabs" id="classesTabs">
+                <li><a href="#/learn">Learn</a></li>
+                <li><a href="#/practise">Practice</a></li>
+            </ul>
+         </div>
+    </div>
+</div>
+<div class="container">
+    <div ng-view></div>
+</div>
+
+</body>
+</html>

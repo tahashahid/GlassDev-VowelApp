@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-touch.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</head>
+<body ng-app="itemsModules" ng-init="splash = true">
+<div class="container" ng-show="splash">
+    <div class="row" id="splash" >
+        <div class="col-sm-12">
+            Vowels<sub>Apps</sub>
+        </div>
+        <button class="btn btn-primary" id="splashScreenClick"  ng-click="splash = false">Learn</button>
+    </div>
+</div>
+<div class="container" id="content"  ng-hide="splash">
+    <div class="row">
+        <div class="col-sm-12 title">
+            <h4><span class="icon glyphicon glyphicon-bullhorn"></span>
+                <span >Vowels<small> app</small></span>
+            </h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <ul class="nav nav-tabs" id="indexTabs">
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="#">Progress</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-sm-12" ng-controller="itemController">
+            <div class="list-group">
+                <a href="#" class="list-group-item" ng-repeat="item in items">
+                    {{item.name}}
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

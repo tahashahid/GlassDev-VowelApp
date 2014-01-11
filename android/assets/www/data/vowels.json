@@ -1,0 +1,17 @@
+[
+    {"name" : "a",
+        "example": "abacus",
+        "description" : "abc"},
+    {"name" : "e",
+        "example": "elephant",
+        "description" : "efg"},
+    {"name" : "i",
+        "example": "iron",
+        "description" : "ijk"},
+    {"name" : "o",
+        "example": "orange",
+        "description" : "opq"},
+    {"name" : "u",
+        "example": "umbrella",
+        "description" : "uvw"}
+]

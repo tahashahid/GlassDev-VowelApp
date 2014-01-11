@@ -1,0 +1,47 @@
+.container{
+    margin: 5px auto;
+}
+#classesTabs li{
+    width: 50%;
+
+}
+#vowelsList li{
+    width:20%;
+}
+#indexTabs li {
+    width:33.33%;
+}
+.nav li {
+    background-color: lightgrey;
+    text-align: center;
+}
+#vowelNav{
+    position: fixed;
+    bottom: 1px;
+}
+#vowelNav ul{
+    width: 100%;
+}
+#splash{
+    text-align: center;
+    font-size: 600%;
+}
+#splash sub{
+    font-size: 20%;
+}
+#practiseBtn{
+    text-align: center;
+}
+#practiseBtn div{
+    margin: 10px;
+}
+
+.TopImg{
+    text-align: center;
+}/*
+.glyphicon-bullhorn{
+    margin-right: 30%;
+}*/
+.title{
+    text-align: center;
+}
